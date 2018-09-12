@@ -9,12 +9,13 @@
 @import Contacts;
 
 #import "MPContactsAuthorizer.h"
+#import "MPContactsAuthorization.h"
 
 @implementation MPContactsAuthorizer
 
 - (MPAuthorizationStatus)authorizationStatus
 {
-    CNAuthorizationStatus authorizationStatus = [CNContactStore authorizationStatusForEntityType:CNEntityTypeContacts];
+    CNAuthorizationStatus authorizationStatus = [MPContactsAuthorization authorizationStatusForEntityType:CNEntityTypeContacts];
     return [self _authorizationStatusFromContactsAuthorizationStatus:authorizationStatus];
 }
 

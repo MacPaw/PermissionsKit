@@ -7,7 +7,8 @@
 //
 
 typedef NS_ENUM(NSUInteger, MPPermissionType) {
-    MPPermissionTypeCalendar,
+    MPPermissionTypeCalendar = 0,
+    MPPermissionTypeReminders,
     MPPermissionTypeContacts,
     MPPermissionTypePhotos,
     MPPermissionTypeFullDiskAccess

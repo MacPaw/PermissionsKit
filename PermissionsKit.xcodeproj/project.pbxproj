@@ -25,6 +25,10 @@
 		A76D5926214949A00091E347 /* preferences.osascript in Resources */ = {isa = PBXBuildFile; fileRef = A76D5925214949A00091E347 /* preferences.osascript */; };
 		A76D592A21494DCB0091E347 /* MPPhotosAuthorizer.h in Headers */ = {isa = PBXBuildFile; fileRef = A76D592821494DCB0091E347 /* MPPhotosAuthorizer.h */; };
 		A76D592B21494DCB0091E347 /* MPPhotosAuthorizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D592921494DCB0091E347 /* MPPhotosAuthorizer.m */; };
+		A76D592D21495A960091E347 /* PermissionsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A706EB5E214938530098836A /* PermissionsKit.framework */; };
+		A76D592E21495A960091E347 /* PermissionsKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A706EB5E214938530098836A /* PermissionsKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A76D593721496DE40091E347 /* MPContactsAuthorization.h in Headers */ = {isa = PBXBuildFile; fileRef = A76D593521496DE40091E347 /* MPContactsAuthorization.h */; };
+		A76D593821496DE40091E347 /* MPContactsAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D593621496DE40091E347 /* MPContactsAuthorization.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,20 @@
 			remoteInfo = PermissionsKit;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A76D592F21495A960091E347 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A76D592E21495A960091E347 /* PermissionsKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A706EB5E214938530098836A /* PermissionsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PermissionsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +79,8 @@
 		A76D5925214949A00091E347 /* preferences.osascript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = preferences.osascript; sourceTree = "<group>"; };
 		A76D592821494DCB0091E347 /* MPPhotosAuthorizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPPhotosAuthorizer.h; sourceTree = "<group>"; };
 		A76D592921494DCB0091E347 /* MPPhotosAuthorizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPPhotosAuthorizer.m; sourceTree = "<group>"; };
+		A76D593521496DE40091E347 /* MPContactsAuthorization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPContactsAuthorization.h; sourceTree = "<group>"; };
+		A76D593621496DE40091E347 /* MPContactsAuthorization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPContactsAuthorization.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76D592D21495A960091E347 /* PermissionsKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +172,8 @@
 			children = (
 				A76D591021493F440091E347 /* MPContactsAuthorizer.h */,
 				A76D591121493F440091E347 /* MPContactsAuthorizer.m */,
+				A76D593521496DE40091E347 /* MPContactsAuthorization.h */,
+				A76D593621496DE40091E347 /* MPContactsAuthorization.m */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -211,6 +234,7 @@
 				A76D591221493F440091E347 /* MPContactsAuthorizer.h in Headers */,
 				A76D592A21494DCB0091E347 /* MPPhotosAuthorizer.h in Headers */,
 				A76D5921214948D40091E347 /* MPFullDiskAccessAuthorizer.h in Headers */,
+				A76D593721496DE40091E347 /* MPContactsAuthorization.h in Headers */,
 				A706EB63214938530098836A /* PermissionsKit.h in Headers */,
 				A76D590721493C5C0091E347 /* MPPermissionsKit.h in Headers */,
 				A76D5917214941CB0091E347 /* MPCalendarAuthorizer.h in Headers */,
@@ -245,6 +269,7 @@
 				A706EB69214939650098836A /* Sources */,
 				A706EB6A214939650098836A /* Frameworks */,
 				A706EB6B214939650098836A /* Resources */,
+				A76D592F21495A960091E347 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -271,6 +296,9 @@
 					A706EB6C214939650098836A = {
 						CreatedOnToolsVersion = 10.0;
 						SystemCapabilities = {
+							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
 							com.apple.Sandbox = {
 								enabled = 0;
 							};
@@ -324,6 +352,7 @@
 				A76D591321493F440091E347 /* MPContactsAuthorizer.m in Sources */,
 				A76D5922214948D40091E347 /* MPFullDiskAccessAuthorizer.m in Sources */,
 				A76D592B21494DCB0091E347 /* MPPhotosAuthorizer.m in Sources */,
+				A76D593821496DE40091E347 /* MPContactsAuthorization.m in Sources */,
 				A76D590821493C5C0091E347 /* MPPermissionsKit.m in Sources */,
 				A76D5918214941CB0091E347 /* MPCalendarAuthorizer.m in Sources */,
 			);
@@ -494,6 +523,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.macpaw.PermissionsKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -519,6 +549,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.macpaw.PermissionsKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -537,6 +568,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.macpaw.PermissionsKitTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -554,6 +586,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.macpaw.PermissionsKitTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
