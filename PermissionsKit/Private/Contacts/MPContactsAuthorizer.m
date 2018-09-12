@@ -15,6 +15,7 @@
 
 - (MPAuthorizationStatus)authorizationStatus
 {
+    //rdar://34158737
     CNAuthorizationStatus authorizationStatus = [MPContactsAuthorization authorizationStatusForEntityType:CNEntityTypeContacts];
     return [self _authorizationStatusFromContactsAuthorizationStatus:authorizationStatus];
 }
