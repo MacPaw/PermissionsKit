@@ -8,16 +8,70 @@
 
 /* Begin PBXBuildFile section */
 		A706EB63214938530098836A /* PermissionsKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A706EB61214938530098836A /* PermissionsKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A706EB71214939650098836A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A706EB70214939650098836A /* AppDelegate.m */; };
+		A706EB76214939660098836A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A706EB74214939660098836A /* MainMenu.xib */; };
+		A706EB79214939660098836A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A706EB78214939660098836A /* main.m */; };
+		A76D590721493C5C0091E347 /* MPPermissionsKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A76D590521493C5C0091E347 /* MPPermissionsKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A76D590821493C5C0091E347 /* MPPermissionsKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D590621493C5C0091E347 /* MPPermissionsKit.m */; };
+		A76D590B21493D480091E347 /* MPAuthorizationStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = A76D590A21493CDB0091E347 /* MPAuthorizationStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A76D590C21493D4B0091E347 /* MPPermissionType.h in Headers */ = {isa = PBXBuildFile; fileRef = A76D590921493CA70091E347 /* MPPermissionType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A76D590E21493EB00091E347 /* MPAuthorizer.h in Headers */ = {isa = PBXBuildFile; fileRef = A76D590D21493EB00091E347 /* MPAuthorizer.h */; };
+		A76D591221493F440091E347 /* MPContactsAuthorizer.h in Headers */ = {isa = PBXBuildFile; fileRef = A76D591021493F440091E347 /* MPContactsAuthorizer.h */; };
+		A76D591321493F440091E347 /* MPContactsAuthorizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D591121493F440091E347 /* MPContactsAuthorizer.m */; };
+		A76D5917214941CB0091E347 /* MPCalendarAuthorizer.h in Headers */ = {isa = PBXBuildFile; fileRef = A76D5915214941CB0091E347 /* MPCalendarAuthorizer.h */; };
+		A76D5918214941CB0091E347 /* MPCalendarAuthorizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D5916214941CB0091E347 /* MPCalendarAuthorizer.m */; };
+		A76D5921214948D40091E347 /* MPFullDiskAccessAuthorizer.h in Headers */ = {isa = PBXBuildFile; fileRef = A76D591F214948D40091E347 /* MPFullDiskAccessAuthorizer.h */; };
+		A76D5922214948D40091E347 /* MPFullDiskAccessAuthorizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D5920214948D40091E347 /* MPFullDiskAccessAuthorizer.m */; };
+		A76D5926214949A00091E347 /* preferences.osascript in Resources */ = {isa = PBXBuildFile; fileRef = A76D5925214949A00091E347 /* preferences.osascript */; };
+		A76D592A21494DCB0091E347 /* MPPhotosAuthorizer.h in Headers */ = {isa = PBXBuildFile; fileRef = A76D592821494DCB0091E347 /* MPPhotosAuthorizer.h */; };
+		A76D592B21494DCB0091E347 /* MPPhotosAuthorizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D592921494DCB0091E347 /* MPPhotosAuthorizer.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A706EB7E21493A1A0098836A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A706EB55214938530098836A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A706EB5D214938530098836A;
+			remoteInfo = PermissionsKit;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A706EB5E214938530098836A /* PermissionsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PermissionsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A706EB61214938530098836A /* PermissionsKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PermissionsKit.h; sourceTree = "<group>"; };
 		A706EB62214938530098836A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A706EB6D214939650098836A /* PermissionsKitTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PermissionsKitTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A706EB6F214939650098836A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A706EB70214939650098836A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A706EB75214939660098836A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A706EB77214939660098836A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A706EB78214939660098836A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A76D590521493C5C0091E347 /* MPPermissionsKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPPermissionsKit.h; sourceTree = "<group>"; };
+		A76D590621493C5C0091E347 /* MPPermissionsKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPPermissionsKit.m; sourceTree = "<group>"; };
+		A76D590921493CA70091E347 /* MPPermissionType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPPermissionType.h; sourceTree = "<group>"; };
+		A76D590A21493CDB0091E347 /* MPAuthorizationStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPAuthorizationStatus.h; sourceTree = "<group>"; };
+		A76D590D21493EB00091E347 /* MPAuthorizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPAuthorizer.h; sourceTree = "<group>"; };
+		A76D591021493F440091E347 /* MPContactsAuthorizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPContactsAuthorizer.h; sourceTree = "<group>"; };
+		A76D591121493F440091E347 /* MPContactsAuthorizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPContactsAuthorizer.m; sourceTree = "<group>"; };
+		A76D5915214941CB0091E347 /* MPCalendarAuthorizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPCalendarAuthorizer.h; sourceTree = "<group>"; };
+		A76D5916214941CB0091E347 /* MPCalendarAuthorizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPCalendarAuthorizer.m; sourceTree = "<group>"; };
+		A76D591F214948D40091E347 /* MPFullDiskAccessAuthorizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPFullDiskAccessAuthorizer.h; sourceTree = "<group>"; };
+		A76D5920214948D40091E347 /* MPFullDiskAccessAuthorizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPFullDiskAccessAuthorizer.m; sourceTree = "<group>"; };
+		A76D5925214949A00091E347 /* preferences.osascript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = preferences.osascript; sourceTree = "<group>"; };
+		A76D592821494DCB0091E347 /* MPPhotosAuthorizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPPhotosAuthorizer.h; sourceTree = "<group>"; };
+		A76D592921494DCB0091E347 /* MPPhotosAuthorizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPPhotosAuthorizer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A706EB5B214938530098836A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A706EB6A214939650098836A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -30,6 +84,7 @@
 		A706EB54214938530098836A = {
 			isa = PBXGroup;
 			children = (
+				A706EB6E214939650098836A /* PermissionsKitTestApp */,
 				A706EB60214938530098836A /* PermissionsKit */,
 				A706EB5F214938530098836A /* Products */,
 			);
@@ -39,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				A706EB5E214938530098836A /* PermissionsKit.framework */,
+				A706EB6D214939650098836A /* PermissionsKitTestApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -46,10 +102,100 @@
 		A706EB60214938530098836A /* PermissionsKit */ = {
 			isa = PBXGroup;
 			children = (
+				A76D5923214949700091E347 /* Resources */,
+				A76D590421493C4C0091E347 /* Private */,
+				A76D590321493C440091E347 /* Public */,
 				A706EB61214938530098836A /* PermissionsKit.h */,
 				A706EB62214938530098836A /* Info.plist */,
 			);
 			path = PermissionsKit;
+			sourceTree = "<group>";
+		};
+		A706EB6E214939650098836A /* PermissionsKitTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				A706EB6F214939650098836A /* AppDelegate.h */,
+				A706EB70214939650098836A /* AppDelegate.m */,
+				A706EB74214939660098836A /* MainMenu.xib */,
+				A706EB77214939660098836A /* Info.plist */,
+				A706EB78214939660098836A /* main.m */,
+			);
+			path = PermissionsKitTestApp;
+			sourceTree = "<group>";
+		};
+		A76D590321493C440091E347 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				A76D590A21493CDB0091E347 /* MPAuthorizationStatus.h */,
+				A76D590921493CA70091E347 /* MPPermissionType.h */,
+				A76D590521493C5C0091E347 /* MPPermissionsKit.h */,
+				A76D590621493C5C0091E347 /* MPPermissionsKit.m */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		A76D590421493C4C0091E347 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				A76D592721494DC00091E347 /* Photos */,
+				A76D591E214948410091E347 /* FullDiskAccess */,
+				A76D5914214941B60091E347 /* Calendar */,
+				A76D590F21493F1B0091E347 /* Contacts */,
+				A76D590D21493EB00091E347 /* MPAuthorizer.h */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		A76D590F21493F1B0091E347 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				A76D591021493F440091E347 /* MPContactsAuthorizer.h */,
+				A76D591121493F440091E347 /* MPContactsAuthorizer.m */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		A76D5914214941B60091E347 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				A76D5915214941CB0091E347 /* MPCalendarAuthorizer.h */,
+				A76D5916214941CB0091E347 /* MPCalendarAuthorizer.m */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		A76D591E214948410091E347 /* FullDiskAccess */ = {
+			isa = PBXGroup;
+			children = (
+				A76D591F214948D40091E347 /* MPFullDiskAccessAuthorizer.h */,
+				A76D5920214948D40091E347 /* MPFullDiskAccessAuthorizer.m */,
+			);
+			path = FullDiskAccess;
+			sourceTree = "<group>";
+		};
+		A76D5923214949700091E347 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A76D5924214949870091E347 /* Scripts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A76D5924214949870091E347 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				A76D5925214949A00091E347 /* preferences.osascript */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		A76D592721494DC00091E347 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				A76D592821494DCB0091E347 /* MPPhotosAuthorizer.h */,
+				A76D592921494DCB0091E347 /* MPPhotosAuthorizer.m */,
+			);
+			path = Photos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,7 +205,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76D590E21493EB00091E347 /* MPAuthorizer.h in Headers */,
+				A76D590C21493D4B0091E347 /* MPPermissionType.h in Headers */,
+				A76D590B21493D480091E347 /* MPAuthorizationStatus.h in Headers */,
+				A76D591221493F440091E347 /* MPContactsAuthorizer.h in Headers */,
+				A76D592A21494DCB0091E347 /* MPPhotosAuthorizer.h in Headers */,
+				A76D5921214948D40091E347 /* MPFullDiskAccessAuthorizer.h in Headers */,
 				A706EB63214938530098836A /* PermissionsKit.h in Headers */,
+				A76D590721493C5C0091E347 /* MPPermissionsKit.h in Headers */,
+				A76D5917214941CB0091E347 /* MPCalendarAuthorizer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +238,24 @@
 			productReference = A706EB5E214938530098836A /* PermissionsKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		A706EB6C214939650098836A /* PermissionsKitTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A706EB7D214939660098836A /* Build configuration list for PBXNativeTarget "PermissionsKitTestApp" */;
+			buildPhases = (
+				A706EB69214939650098836A /* Sources */,
+				A706EB6A214939650098836A /* Frameworks */,
+				A706EB6B214939650098836A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A706EB7F21493A1A0098836A /* PBXTargetDependency */,
+			);
+			name = PermissionsKitTestApp;
+			productName = PermissionsKitTestApp;
+			productReference = A706EB6D214939650098836A /* PermissionsKitTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +268,14 @@
 					A706EB5D214938530098836A = {
 						CreatedOnToolsVersion = 10.0;
 					};
+					A706EB6C214939650098836A = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
 				};
 			};
 			buildConfigurationList = A706EB58214938530098836A /* Build configuration list for PBXProject "PermissionsKit" */;
@@ -104,6 +284,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = A706EB54214938530098836A;
 			productRefGroup = A706EB5F214938530098836A /* Products */;
@@ -111,6 +292,7 @@
 			projectRoot = "";
 			targets = (
 				A706EB5D214938530098836A /* PermissionsKit */,
+				A706EB6C214939650098836A /* PermissionsKitTestApp */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +302,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76D5926214949A00091E347 /* preferences.osascript in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A706EB6B214939650098836A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A706EB76214939660098836A /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,10 +321,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76D591321493F440091E347 /* MPContactsAuthorizer.m in Sources */,
+				A76D5922214948D40091E347 /* MPFullDiskAccessAuthorizer.m in Sources */,
+				A76D592B21494DCB0091E347 /* MPPhotosAuthorizer.m in Sources */,
+				A76D590821493C5C0091E347 /* MPPermissionsKit.m in Sources */,
+				A76D5918214941CB0091E347 /* MPCalendarAuthorizer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A706EB69214939650098836A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A706EB79214939660098836A /* main.m in Sources */,
+				A706EB71214939650098836A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A706EB7F21493A1A0098836A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A706EB5D214938530098836A /* PermissionsKit */;
+			targetProxy = A706EB7E21493A1A0098836A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A706EB74214939660098836A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A706EB75214939660098836A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A706EB64214938530098836A /* Debug */ = {
@@ -301,6 +525,40 @@
 			};
 			name = Release;
 		};
+		A706EB7B214939660098836A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S8EX82NJP6;
+				INFOPLIST_FILE = PermissionsKitTestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.macpaw.PermissionsKitTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A706EB7C214939660098836A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S8EX82NJP6;
+				INFOPLIST_FILE = PermissionsKitTestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.macpaw.PermissionsKitTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -318,6 +576,15 @@
 			buildConfigurations = (
 				A706EB67214938530098836A /* Debug */,
 				A706EB68214938530098836A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A706EB7D214939660098836A /* Build configuration list for PBXNativeTarget "PermissionsKitTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A706EB7B214939660098836A /* Debug */,
+				A706EB7C214939660098836A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

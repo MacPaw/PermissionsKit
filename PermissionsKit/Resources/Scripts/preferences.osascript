@@ -1,0 +1,4 @@
+activate application "System Preferences"
+tell application "System Preferences"
+	reveal anchor "Privacy_AllFiles" of pane "com.apple.preference.security"
+end tell
