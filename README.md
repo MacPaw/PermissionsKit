@@ -1,5 +1,7 @@
 # PermissionsKit
 
+![Calendar](https://github.com/MacPaw/PermissionsKit/raw/master/Screenshots/logo.png)
+
 The convenience wrapper on macOS permissions API. 
 
 Current implementation supports permissions for: 
