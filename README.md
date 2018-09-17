@@ -10,7 +10,9 @@ Current implementation supports permissions for:
 * [Photos](#photos)
 * [Full Disk Access](#full-disk-access)
 
-Code:
+## Usage
+
+Available types:
 ```objc
 typedef NS_ENUM(NSUInteger, MPPermissionType) {
     MPPermissionTypeCalendar = 0,
@@ -20,8 +22,6 @@ typedef NS_ENUM(NSUInteger, MPPermissionType) {
     MPPermissionTypeFullDiskAccess
 } NS_SWIFT_NAME(PermissionType);
 ```
-
-## Usage
 
 Get permissions status:
 ```objc
@@ -88,7 +88,8 @@ Calling for permissions opens Preferences->Privacy with selected "Full Disk Acce
 
 ## Requirements
 
-*Min OS Version*: 10.9
+macOS 10.9+
+However different kinds of permissions require different system version it is safe to call for authorization witout actual system check. `MPAuthorizationStatusAuthorized` will be returned in this case.
 
 ## Example 
 
