@@ -37,29 +37,37 @@ Ask for permissions:
 + (void)requestAuthorizationForPermissionType:(MPPermissionType)permissionType withCompletion:(void (^)(MPAuthorizationStatus status))completionHandler;
 ```
 
-### Calendar
+## Calendar
 10.9+
 
 ![Calendar](https://github.com/MacPaw/PermissionsKit/raw/master/Screenshots/calendar.png)
 
-### Contacts
+`NSCalendarsUsageDescription` key in info.plist is required.
+
+## Contacts
 10.11+
 
 ![Contacts](https://github.com/MacPaw/PermissionsKit/raw/master/Screenshots/calendar.png)
 
-:warning:Uses **Private API** for calling permissions, because public one is not working propertly. See rdar://34158737 
+:warning:Uses **Private API** for calling permissions, because public one is not working propertly. See [rdar://34158737](http://www.openradar.me/34158737)
 
-### Reminders
+`NSContactsUsageDescription` key is required in Info.plist
+
+## Reminders
 10.9+
 
 ![Reminders](https://github.com/MacPaw/PermissionsKit/raw/master/Screenshots/reminders.png)
 
-### Photos
+`NSRemindersUsageDescription` key is required in Info.plist
+
+## Photos
 10.13+
 
-:warning:Works only for Photos Extensions. See rdar://34431396 and rdar://43426722
+:warning:Works only for Photos Extensions. See [rdar://34431396](http://www.openradar.me/34431396) and [rdar://43426722](http://www.openradar.me/43426722)
 
-### Full Disk Access
+`NSPhotoLibraryUsageDescription` key is required in Info.plist
+
+## Full Disk Access
 10.14+
 
 ![FDA](https://github.com/MacPaw/PermissionsKit/raw/master/Screenshots/full_disk_access.png)
