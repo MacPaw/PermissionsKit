@@ -58,7 +58,7 @@ Ask for permissions:
 ## Contacts
 10.11+
 
-![Contacts](https://github.com/MacPaw/PermissionsKit/raw/master/Screenshots/calendar.png)
+![Contacts](https://github.com/MacPaw/PermissionsKit/raw/master/Screenshots/contacts.png)
 
 :warning:Uses **Private API** for calling permissions, because public one is not working propertly. See [rdar://34158737](http://www.openradar.me/34158737)
 
