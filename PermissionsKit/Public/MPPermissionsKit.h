@@ -28,7 +28,7 @@ NS_SWIFT_NAME(PermissionsKit)
 
 /**
  * Requests user authorization for a given permission. Completion will be invoked with a user decision. Completion queue is undefined.
- * @discussion The will be no completion when requesting MPPermissionTypeFullDiskAccess, because its status is unknown. You should implement your own callback mechanism, for example - polling authorization. It is safe to call this method on system where permission type is not supported. MPAuthorizationStatusAuthorized will be returned.
+ * @discussion There will be no completion when requesting MPPermissionTypeFullDiskAccess, because its status is unknown. You should implement your own callback mechanism, for example - polling authorization. It is safe to call this method on system where permission type is not supported. MPAuthorizationStatusAuthorized will be returned.
  *
  * @param permissionType MPPermissionType
  * @param completionHandler void (^)(MPAuthorizationStatus status)

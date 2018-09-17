@@ -13,9 +13,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- MPPhotos authorizer is not working for some reason:
- rdar://34431396
- rdar://43426722
+ * Authorizer for Photos library usage.
+ * @discussion MPPhotosAuthorizer works only for Photos Extensions.
+ * rdar://34431396
+ * rdar://43426722
  */
 @interface MPPhotosAuthorizer : NSObject <MPAuthorizer>
 
