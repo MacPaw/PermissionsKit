@@ -5,10 +5,10 @@ The convenience wrapper on macOS permissions API.
 Current implementation supports permissions for: 
 
 * [Calendar](#calendar)
-* Contacts
-* Reminders
-* Photos
-* Full Disk Access
+* [Contacts](#contacts)
+* [Reminders](#reminders)
+* [Photos](#photos)
+* [Full Disk Access](#full-disk-access)
 
 Code:
 ```objc
