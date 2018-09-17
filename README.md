@@ -83,7 +83,8 @@ Ask for permissions:
 
 ![FDA](https://github.com/MacPaw/PermissionsKit/raw/master/Screenshots/full_disk_access.png)
 
-:warning:There will be no callback when request this type of permission. Calling for permissions opens Preferences->Privacy with selected "Full Disk Access" section. 
+:warning:There will be no callback when requesting this type of permission, so you should use your own implementation such as polling permission status, or use other events to handle possible permission change (for example handle `NSApp` foreground/background status).
+Calling for permissions opens Preferences->Privacy with selected "Full Disk Access" section. 
 
 ## Requirements
 
