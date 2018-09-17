@@ -8,7 +8,7 @@ Current implementation supports permissions for:
 * Contacts
 * Reminders
 * Photos
-* Full Disk Access for Mojave ()
+* Full Disk Access
 
 ## Usage
 
