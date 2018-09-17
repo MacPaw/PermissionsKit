@@ -4,7 +4,7 @@ The convenience wrapper on macOS permissions API.
 
 Current implementation supports permissions for: 
 
-* Calendar
+* [Calendar](#calendar)
 * Contacts
 * Reminders
 * Photos
