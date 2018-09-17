@@ -96,3 +96,10 @@ However different kinds of permissions require different system version it is sa
 See PermissionsKitTestApp target
 
 ![TestAppScreenshot](https://github.com/MacPaw/PermissionsKit/raw/master/Screenshots/test_app.png)
+
+## Useful links:
+
+* [Full Disk Access](https://forums.developer.apple.com/thread/107546)
+* [Contacts](https://developer.apple.com/documentation/contacts/cncontactstore/1402873-requestaccessforentitytype?language=objc)
+* [Calendar, Reminders](https://developer.apple.com/documentation/eventkit/ekeventstore/1507239-authorizationstatusforentitytype)
+* [Photos](https://developer.apple.com/documentation/photokit/phphotolibrary/1620736-requestauthorization?language=objc)
