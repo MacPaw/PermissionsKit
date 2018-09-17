@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14269.14" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14269.14"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14313.18"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -11,7 +12,7 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
                 <outlet property="calendarLabel" destination="QIM-R9-6mt" id="EBG-on-Kbd"/>
@@ -824,14 +825,6 @@
                             <action selector="authorize:" target="Voe-Tx-rLC" id="BKg-xU-1VM"/>
                         </connections>
                     </button>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sva-Fu-2SB">
-                        <rect key="frame" x="255" y="57" width="135" height="17"/>
-                        <textFieldCell key="cell" lineBreakMode="clipping" title="Does not work, kurwa" id="ZUk-rH-sV2">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
                 </subviews>
                 <constraints>
                     <constraint firstItem="Fit-jC-Mnu" firstAttribute="centerY" secondItem="MK3-aG-0jY" secondAttribute="centerY" id="596-r6-885"/>
@@ -848,7 +841,6 @@
                     <constraint firstItem="rt5-6n-I87" firstAttribute="centerY" secondItem="8e7-99-T2P" secondAttribute="centerY" id="T68-Zh-u1t"/>
                     <constraint firstItem="jiM-4w-LlI" firstAttribute="centerY" secondItem="Fit-jC-Mnu" secondAttribute="centerY" id="TCI-na-J2g"/>
                     <constraint firstItem="MK3-aG-0jY" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="W69-oS-2Wd"/>
-                    <constraint firstItem="sva-Fu-2SB" firstAttribute="leading" secondItem="jiM-4w-LlI" secondAttribute="trailing" constant="4" id="Wz6-TY-UGd"/>
                     <constraint firstItem="QIM-R9-6mt" firstAttribute="centerY" secondItem="1UC-Q0-Nib" secondAttribute="centerY" id="bW2-oL-FlD"/>
                     <constraint firstItem="kcN-1M-aMg" firstAttribute="leading" secondItem="QIM-R9-6mt" secondAttribute="trailing" constant="4" id="bbv-zd-BAr"/>
                     <constraint firstItem="kc6-9t-soC" firstAttribute="centerY" secondItem="ZA0-IW-zKy" secondAttribute="centerY" id="cbD-yt-eBv"/>
@@ -860,7 +852,6 @@
                     <constraint firstItem="ZA0-IW-zKy" firstAttribute="leading" secondItem="1Jy-E6-nDV" secondAttribute="trailing" constant="4" id="krx-KR-6iK"/>
                     <constraint firstItem="Xhx-oa-Vpr" firstAttribute="leading" secondItem="rt5-6n-I87" secondAttribute="trailing" constant="4" id="nXh-qH-VDo"/>
                     <constraint firstItem="1Jy-E6-nDV" firstAttribute="top" secondItem="MK3-aG-0jY" secondAttribute="bottom" constant="24" id="nzM-EZ-log"/>
-                    <constraint firstItem="sva-Fu-2SB" firstAttribute="centerY" secondItem="jiM-4w-LlI" secondAttribute="centerY" id="ob4-jQ-TiA"/>
                     <constraint firstItem="1UC-Q0-Nib" firstAttribute="top" secondItem="8e7-99-T2P" secondAttribute="bottom" constant="24" id="ozH-qY-1Am"/>
                     <constraint firstItem="v8y-tB-mC7" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="r1q-9f-cRO"/>
                     <constraint firstItem="Fit-jC-Mnu" firstAttribute="leading" secondItem="MK3-aG-0jY" secondAttribute="trailing" constant="4" id="rEf-0S-12o"/>

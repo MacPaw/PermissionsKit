@@ -568,7 +568,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.macpaw.PermissionsKitTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -586,7 +586,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.macpaw.PermissionsKitTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

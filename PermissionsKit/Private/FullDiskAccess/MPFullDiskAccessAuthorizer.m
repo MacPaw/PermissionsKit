@@ -37,12 +37,26 @@ static NSString * const MPFullDiskAccessAuthorizerScriptName = @"preferences";
 
 - (MPAuthorizationStatus)authorizationStatus
 {
-    return [self _fullDiskAuthorizationStatus];
+    if (@available(macOS 10.14, *))
+    {
+        return [self _fullDiskAuthorizationStatus];
+    }
+    else
+    {
+        return MPAuthorizationStatusAuthorized;
+    }
 }
 
 - (void)requestAuthorizationWithCompletion:(nonnull void (^)(MPAuthorizationStatus))completionHandler
 {
-    [self _openPreferences];
+    if (@available(macOS 10.14, *))
+    {
+        [self _openPreferences];
+    }
+    else
+    {
+        completionHandler(MPAuthorizationStatusAuthorized);
+    }
 }
 
 #pragma mark - Private

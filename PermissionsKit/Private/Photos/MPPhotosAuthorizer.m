@@ -14,15 +14,29 @@
 
 - (MPAuthorizationStatus)authorizationStatus
 {
-    PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
-    return [self _authorizationStatusFromPhotosAuthorizationStatus:status];
+    if (@available(macOS 10.13, *))
+    {
+        PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
+        return [self _authorizationStatusFromPhotosAuthorizationStatus:status];
+    }
+    else
+    {
+        return MPAuthorizationStatusAuthorized;
+    }
 }
 
 - (void)requestAuthorizationWithCompletion:(nonnull void (^)(MPAuthorizationStatus))completionHandler
 {
-    [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
-        completionHandler([self _authorizationStatusFromPhotosAuthorizationStatus:status]);
-    }];
+    if (@available(macOS 10.13, *))
+    {
+        [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
+            completionHandler([self _authorizationStatusFromPhotosAuthorizationStatus:status]);
+        }];
+    }
+    else
+    {
+        completionHandler(MPAuthorizationStatusAuthorized);
+    }
 }
 
 #pragma mark - Private

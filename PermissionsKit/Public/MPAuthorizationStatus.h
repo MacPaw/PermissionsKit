@@ -10,4 +10,4 @@ typedef NS_ENUM(NSUInteger, MPAuthorizationStatus) {
     MPAuthorizationStatusNotDetermined,
     MPAuthorizationStatusDenied,
     MPAuthorizationStatusAuthorized
-};
+} NS_SWIFT_NAME(AuthorizationStatus);

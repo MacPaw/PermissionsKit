@@ -12,4 +12,4 @@ typedef NS_ENUM(NSUInteger, MPPermissionType) {
     MPPermissionTypeContacts,
     MPPermissionTypePhotos,
     MPPermissionTypeFullDiskAccess
-};
+} NS_SWIFT_NAME(PermissionType);

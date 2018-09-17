@@ -15,17 +15,31 @@
 
 - (MPAuthorizationStatus)authorizationStatus
 {
-    //rdar://34158737
-    CNAuthorizationStatus authorizationStatus = [MPContactsAuthorization authorizationStatusForEntityType:CNEntityTypeContacts];
-    return [self _authorizationStatusFromContactsAuthorizationStatus:authorizationStatus];
+    if (@available(macOS 10.11, *))
+    {
+        //rdar://34158737
+        CNAuthorizationStatus authorizationStatus = [MPContactsAuthorization authorizationStatusForEntityType:CNEntityTypeContacts];
+        return [self _authorizationStatusFromContactsAuthorizationStatus:authorizationStatus];
+    }
+    else
+    {
+        return MPAuthorizationStatusAuthorized;
+    }
 }
 
 - (void)requestAuthorizationWithCompletion:(nonnull void (^)(MPAuthorizationStatus))completionHandler
 {
-    CNContactStore *store = [CNContactStore new];
-    [store requestAccessForEntityType:CNEntityTypeContacts completionHandler:^(BOOL granted, NSError * _Nullable error) {
-        completionHandler(granted ? MPAuthorizationStatusAuthorized : MPAuthorizationStatusDenied);
-    }];
+    if (@available(macOS 10.11, *))
+    {
+        CNContactStore *store = [CNContactStore new];
+        [store requestAccessForEntityType:CNEntityTypeContacts completionHandler:^(BOOL granted, NSError * _Nullable error) {
+            completionHandler(granted ? MPAuthorizationStatusAuthorized : MPAuthorizationStatusDenied);
+        }];
+    }
+    else
+    {
+        completionHandler(MPAuthorizationStatusAuthorized);
+    }
 }
 
 #pragma mark - Private

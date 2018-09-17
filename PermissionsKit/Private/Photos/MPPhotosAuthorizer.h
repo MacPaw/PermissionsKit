@@ -12,6 +12,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ MPPhotos authorizer is not working for some reason:
+ rdar://34431396
+ rdar://43426722
+ */
 @interface MPPhotosAuthorizer : NSObject <MPAuthorizer>
 
 @end
