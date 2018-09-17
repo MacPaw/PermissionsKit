@@ -40,13 +40,19 @@ Ask for permissions:
 ### Calendar
 10.9+
 
+![Calendar](https://github.com/MacPaw/PermissionsKit/raw/master/Screenshots/calendar.png)
+
 ### Contacts
 10.11+
+
+![Contacts](https://github.com/MacPaw/PermissionsKit/raw/master/Screenshots/calendar.png)
 
 :warning:Uses **Private API** for calling permissions, because public one is not working propertly. See rdar://34158737 
 
 ### Reminders
 10.9+
+
+![Reminders](https://github.com/MacPaw/PermissionsKit/raw/master/Screenshots/reminders.png)
 
 ### Photos
 10.13+
@@ -55,6 +61,8 @@ Ask for permissions:
 
 ### Full Disk Access
 10.14+
+
+![FDA](https://github.com/MacPaw/PermissionsKit/raw/master/Screenshots/full_disk_access.png)
 
 :warning:There will be no callback when request this type of permission. Calling for permissions opens Preferences->Privacy with selected "Full Disk Access" section. 
 
@@ -65,3 +73,5 @@ Ask for permissions:
 ## Example 
 
 See PermissionsKitTestApp target
+
+![TestAppScreenshot](https://github.com/MacPaw/PermissionsKit/raw/master/Screenshots/test_app.png)
