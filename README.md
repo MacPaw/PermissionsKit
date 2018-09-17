@@ -61,3 +61,7 @@ Ask for permissions:
 ## Requirements
 
 *Min OS Version*: 10.9
+
+## Example 
+
+See PermissionsKitTestApp target
