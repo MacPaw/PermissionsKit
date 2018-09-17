@@ -791,7 +791,7 @@
                     </textField>
                     <button verticalHuggingPriority="750" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="jiM-4w-LlI">
                         <rect key="frame" x="161" y="48" width="98" height="32"/>
-                        <buttonCell key="cell" type="push" title="Authorize" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="60C-qw-VrK">
+                        <buttonCell key="cell" type="push" title="Authorize" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="60C-qw-VrK">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
