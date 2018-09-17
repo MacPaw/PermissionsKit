@@ -10,6 +10,17 @@ Current implementation supports permissions for:
 * Photos
 * Full Disk Access
 
+Code:
+```objc
+typedef NS_ENUM(NSUInteger, MPPermissionType) {
+    MPPermissionTypeCalendar = 0,
+    MPPermissionTypeReminders,
+    MPPermissionTypeContacts,
+    MPPermissionTypePhotos,
+    MPPermissionTypeFullDiskAccess
+} NS_SWIFT_NAME(PermissionType);
+```
+
 ## Usage
 
 Get permissions status:
