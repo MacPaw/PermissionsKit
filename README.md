@@ -43,9 +43,7 @@ Ask for permissions:
 ### Contacts
 10.11+
 
-<aside class="warning">
 Uses Private API for calling permissions, because public one is not working propertly. See rdar://34158737 
-</aside>
 
 ### Reminders
 10.9+
@@ -53,16 +51,12 @@ Uses Private API for calling permissions, because public one is not working prop
 ### Photos
 10.13+
 
-<aside class="notice">
 Works only for Photos Extensions. See rdar://34431396 and rdar://43426722
-</aside>
 
 ### Full Disk Access
-**macOS version**: 10.14
+10.14+
 
-<aside class="notice">
-**Notes:** There will be no callback when request this type of permission. Calling for permissions opens Preferences->Privacy with selected "Full Disk Access" section. 
-</aside>
+There will be no callback when request this type of permission. Calling for permissions opens Preferences->Privacy with selected "Full Disk Access" section. 
 
 ## Requirements
 
