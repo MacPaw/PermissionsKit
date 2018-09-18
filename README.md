@@ -99,10 +99,34 @@ See PermissionsKitTestApp target
 
 ![TestAppScreenshot](https://github.com/MacPaw/PermissionsKit/raw/master/Screenshots/test_app.png)
 
-## Useful links:
+## Useful links
 
 * [Full Disk Access](https://forums.developer.apple.com/thread/107546)
 * [Contacts](https://developer.apple.com/documentation/contacts/cncontactstore/1402873-requestaccessforentitytype?language=objc)
 * [Calendar, Reminders](https://developer.apple.com/documentation/eventkit/ekeventstore/1507239-authorizationstatusforentitytype)
 * [Photos](https://developer.apple.com/documentation/photokit/phphotolibrary/1620736-requestauthorization?language=objc)
 * [tccutil](https://bitsplitting.org/2018/07/11/reauthorizing-automation-in-mojave/)
+
+## License
+
+MIT License
+
+Copyright (c) 2018 MacPaw
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
