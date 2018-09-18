@@ -105,3 +105,4 @@ See PermissionsKitTestApp target
 * [Contacts](https://developer.apple.com/documentation/contacts/cncontactstore/1402873-requestaccessforentitytype?language=objc)
 * [Calendar, Reminders](https://developer.apple.com/documentation/eventkit/ekeventstore/1507239-authorizationstatusforentitytype)
 * [Photos](https://developer.apple.com/documentation/photokit/phphotolibrary/1620736-requestauthorization?language=objc)
+* [tccutil](https://bitsplitting.org/2018/07/11/reauthorizing-automation-in-mojave/)
