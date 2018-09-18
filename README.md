@@ -85,6 +85,8 @@ Ask for permissions:
 
 ![FDA](https://github.com/MacPaw/PermissionsKit/raw/master/Screenshots/full_disk_access.png)
 
+Since there is no legal API to request Full Disk Access permissions on macOS 10.14, this is the only workaround to get and ask for it.
+
 :warning:There will be no callback when requesting this type of permission, so you should use your own implementation such as polling permission status, or use other events to handle possible permission change (for example handle `NSApp` foreground/background status).
 Calling for permissions opens Preferences->Privacy with selected "Full Disk Access" section. 
 
