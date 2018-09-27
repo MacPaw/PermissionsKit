@@ -2,7 +2,7 @@
 
 ![Calendar](https://github.com/MacPaw/PermissionsKit/raw/master/Screenshots/logo.png)
 
-The convenience wrapper on macOS permissions API. 
+The convenient wrapper on macOS permissions API. 
 
 Current implementation supports permissions for: 
 
@@ -62,7 +62,7 @@ Ask for permissions:
 
 ![Contacts](https://github.com/MacPaw/PermissionsKit/raw/master/Screenshots/contacts.png)
 
-:warning:Uses **Private API** for calling permissions, because public one is not working propertly. See [rdar://34158737](http://www.openradar.me/34158737)
+:warning:Uses **Private API** for calling permissions, because public one is not working properly. See [rdar://34158737](http://www.openradar.me/34158737)
 
 `NSContactsUsageDescription` key is required in Info.plist
 
