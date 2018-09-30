@@ -14,7 +14,7 @@ The convenient wrapper on macOS permissions API.
   s.social_media_url = 'https://twitter.com/Krivoblotsky'
 
   s.platform = :osx
-  s.osx.deployment_target = "10.8"
+  s.osx.deployment_target = "10.13"
 
   s.source_files = 'PermissionsKit/Public/**/*', 'PermissionsKit/Private/**/*', 'PermissionsKit/PermissionsKit.h'
   s.resources = 'PermissionsKit/Resources/scripts/*.osascript'
