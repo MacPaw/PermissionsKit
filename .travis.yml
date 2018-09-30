@@ -1,4 +1,3 @@
-language: ruby
-rvm:
- - 2.2
- - jruby
+language: objective-c
+xcode_project: PermissionsKit.xcodeproj
+xcode_scheme: PermissionsKit
