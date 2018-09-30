@@ -1,4 +1,4 @@
 language: objective-c
 xcode_project: PermissionsKit.xcodeproj
 xcode_scheme: PermissionsKit
-script: set -o pipefail && xcodebuild -project PermissionsKit.xcodeproj -scheme PermissionsKit build | xcpretty"
+script: "set -o pipefail && xcodebuild -project PermissionsKit.xcodeproj -scheme PermissionsKit build | xcpretty"
