@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version          = '0.1.0'
   s.summary          = 'The convenience wrapper on macOS permissions API, including Mojave Full Disk Access.'
   s.description      = <<-DESC
-The convenient wrapper on macOS permissions API.
+The convenient wrapper on macOS permissions API. You can check and request user permissions to access: Calendar, Reminders, Contacts, Photos and Full Disk Access on Mojave.
                        DESC
   s.module_name       = 'PermissionsKit'					   
   s.homepage          = 'https://github.com/MacPaw/PermissionsKit'
