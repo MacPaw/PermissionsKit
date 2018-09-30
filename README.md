@@ -1,5 +1,12 @@
 # PermissionsKit
 
+
+[![CI Status](https://img.shields.io/travis/MacPaw/PermissionsKit.svg?style=flat)](https://travis-ci.org/MacPaw/PermissionsKit-macOS)
+[![Version](https://img.shields.io/cocoapods/v/PermissionsKit-macOS.svg?style=flat)](https://cocoapods.org/pods/PermissionsKit-macOS)
+[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/MacPaw/PermissionsKit-macOS)
+[![Platform](https://img.shields.io/cocoapods/p/PermissionsKit-macOS.svg?style=flat)](https://cocoapods.org/pods/PermissionsKit-macOS)
+[![License](https://img.shields.io/cocoapods/l/PermissionsKit-macOS.svg?style=flat)](https://cocoapods.org/pods/PermissionsKit-macOS)
+
 ![Calendar](https://github.com/MacPaw/PermissionsKit/raw/master/Screenshots/logo.png)
 
 The convenient wrapper on macOS permissions API. 
