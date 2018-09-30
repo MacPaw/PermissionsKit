@@ -90,6 +90,23 @@ Since there is no legal API to request Full Disk Access permissions on macOS 10.
 :warning:There will be no callback when requesting this type of permission, so you should use your own implementation such as polling permission status, or use other events to handle possible permission change (for example handle `NSApp` foreground/background status).
 Calling for permissions opens Preferences->Privacy with selected "Full Disk Access" section. 
 
+## Installation
+
+### CocoaPods
+PermissionsKit is available through [CocoaPods](https://cocoapods.org). To install it, simply add the following line to your Podfile:
+```ruby
+pod 'PermissionsKit-macOS'
+```
+
+### Carthage
+PermissionsKit is available through [Carthage](https://github.com/Carthage/Carthage). To install it, simple add the following line to your Cartfile:
+```ruby
+github "MacPaw/PermissionsKit"
+```
+
+### Manual
+For manual installation just choose the latest available [Release](https://github.com/MacPaw/PermissionsKit/releases) and drag and drop the framework to you project. (You may also need to add it to Embedded Binaries).
+
 ## Requirements
 
 macOS 10.9+
