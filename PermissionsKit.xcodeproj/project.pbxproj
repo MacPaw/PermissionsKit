@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30093F5021C1522F004FD64E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A706EB78214939660098836A /* main.m */; };
+		30093F5121C1522F004FD64E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A706EB70214939650098836A /* AppDelegate.m */; };
+		30093F5321C1522F004FD64E /* PermissionsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A706EB5E214938530098836A /* PermissionsKit.framework */; };
+		30093F5521C1522F004FD64E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A706EB74214939660098836A /* MainMenu.xib */; };
+		30093F5721C1522F004FD64E /* PermissionsKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A706EB5E214938530098836A /* PermissionsKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A706EB63214938530098836A /* PermissionsKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A706EB61214938530098836A /* PermissionsKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A706EB71214939650098836A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A706EB70214939650098836A /* AppDelegate.m */; };
 		A706EB76214939660098836A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A706EB74214939660098836A /* MainMenu.xib */; };
@@ -32,6 +37,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		30093F4E21C1522F004FD64E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A706EB55214938530098836A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A706EB5D214938530098836A;
+			remoteInfo = PermissionsKit;
+		};
 		A706EB7E21493A1A0098836A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A706EB55214938530098836A /* Project object */;
@@ -42,6 +54,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		30093F5621C1522F004FD64E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				30093F5721C1522F004FD64E /* PermissionsKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A76D592F21495A960091E347 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,6 +79,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		30093F5B21C1522F004FD64E /* PermissionsKitTestApp-Sandboxed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PermissionsKitTestApp-Sandboxed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30093F5C21C1522F004FD64E /* PermissionsKitTestApp copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PermissionsKitTestApp copy-Info.plist"; path = "/Users/roman/Repositories/PermissionsKit/PermissionsKitTestApp copy-Info.plist"; sourceTree = "<absolute>"; };
+		30093F5D21C15244004FD64E /* PermissionsKitTestApp-Sandboxed.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "PermissionsKitTestApp-Sandboxed.entitlements"; sourceTree = "<group>"; };
 		A706EB5E214938530098836A /* PermissionsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PermissionsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A706EB61214938530098836A /* PermissionsKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PermissionsKit.h; sourceTree = "<group>"; };
 		A706EB62214938530098836A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,6 +110,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		30093F5221C1522F004FD64E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30093F5321C1522F004FD64E /* PermissionsKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A706EB5B214938530098836A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -102,12 +136,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30093FD321C156F2004FD64E /* Entitlements */ = {
+			isa = PBXGroup;
+			children = (
+				30093F5D21C15244004FD64E /* PermissionsKitTestApp-Sandboxed.entitlements */,
+			);
+			path = Entitlements;
+			sourceTree = "<group>";
+		};
 		A706EB54214938530098836A = {
 			isa = PBXGroup;
 			children = (
 				A706EB6E214939650098836A /* PermissionsKitTestApp */,
 				A706EB60214938530098836A /* PermissionsKit */,
 				A706EB5F214938530098836A /* Products */,
+				30093F5C21C1522F004FD64E /* PermissionsKitTestApp copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +159,7 @@
 			children = (
 				A706EB5E214938530098836A /* PermissionsKit.framework */,
 				A706EB6D214939650098836A /* PermissionsKitTestApp.app */,
+				30093F5B21C1522F004FD64E /* PermissionsKitTestApp-Sandboxed.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,6 +179,7 @@
 		A706EB6E214939650098836A /* PermissionsKitTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				30093FD321C156F2004FD64E /* Entitlements */,
 				A706EB6F214939650098836A /* AppDelegate.h */,
 				A706EB70214939650098836A /* AppDelegate.m */,
 				A706EB74214939660098836A /* MainMenu.xib */,
@@ -244,6 +289,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		30093F4C21C1522F004FD64E /* PermissionsKitTestApp-Sandboxed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30093F5821C1522F004FD64E /* Build configuration list for PBXNativeTarget "PermissionsKitTestApp-Sandboxed" */;
+			buildPhases = (
+				30093F4F21C1522F004FD64E /* Sources */,
+				30093F5221C1522F004FD64E /* Frameworks */,
+				30093F5421C1522F004FD64E /* Resources */,
+				30093F5621C1522F004FD64E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30093F4D21C1522F004FD64E /* PBXTargetDependency */,
+			);
+			name = "PermissionsKitTestApp-Sandboxed";
+			productName = PermissionsKitTestApp;
+			productReference = 30093F5B21C1522F004FD64E /* PermissionsKitTestApp-Sandboxed.app */;
+			productType = "com.apple.product-type.application";
+		};
 		A706EB5D214938530098836A /* PermissionsKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A706EB66214938530098836A /* Build configuration list for PBXNativeTarget "PermissionsKit" */;
@@ -290,6 +354,13 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = MacPaw;
 				TargetAttributes = {
+					30093F4C21C1522F004FD64E = {
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
 					A706EB5D214938530098836A = {
 						CreatedOnToolsVersion = 10.0;
 					};
@@ -321,11 +392,20 @@
 			targets = (
 				A706EB5D214938530098836A /* PermissionsKit */,
 				A706EB6C214939650098836A /* PermissionsKitTestApp */,
+				30093F4C21C1522F004FD64E /* PermissionsKitTestApp-Sandboxed */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		30093F5421C1522F004FD64E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30093F5521C1522F004FD64E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A706EB5C214938530098836A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -345,6 +425,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		30093F4F21C1522F004FD64E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30093F5021C1522F004FD64E /* main.m in Sources */,
+				30093F5121C1522F004FD64E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A706EB5A214938530098836A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -370,6 +459,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		30093F4D21C1522F004FD64E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A706EB5D214938530098836A /* PermissionsKit */;
+			targetProxy = 30093F4E21C1522F004FD64E /* PBXContainerItemProxy */;
+		};
 		A706EB7F21493A1A0098836A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A706EB5D214938530098836A /* PermissionsKit */;
@@ -389,6 +483,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		30093F5921C1522F004FD64E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "PermissionsKitTestApp/Entitlements/PermissionsKitTestApp-Sandboxed.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S8EX82NJP6;
+				INFOPLIST_FILE = "PermissionsKitTestApp copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.macpaw.PermissionsKitTestApp-sandboxed";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		30093F5A21C1522F004FD64E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "PermissionsKitTestApp/Entitlements/PermissionsKitTestApp-Sandboxed.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S8EX82NJP6;
+				INFOPLIST_FILE = "PermissionsKitTestApp copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.macpaw.PermissionsKitTestApp-sandboxed";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		A706EB64214938530098836A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -595,6 +727,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		30093F5821C1522F004FD64E /* Build configuration list for PBXNativeTarget "PermissionsKitTestApp-Sandboxed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30093F5921C1522F004FD64E /* Debug */,
+				30093F5A21C1522F004FD64E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A706EB58214938530098836A /* Build configuration list for PBXProject "PermissionsKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
