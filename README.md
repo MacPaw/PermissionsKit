@@ -97,6 +97,23 @@ Since there is no legal API to request Full Disk Access permissions on macOS 10.
 :warning:There will be no callback when requesting this type of permission, so you should use your own implementation such as polling permission status, or use other events to handle possible permission change (for example handle `NSApp` foreground/background status).
 Calling for permissions opens Preferences->Privacy with selected "Full Disk Access" section. 
 
+## Application Sandbox:
+
+PermissionsKit can be used in sandboxed applications. But this application should have access to the file
+`Library/Safari/Bookmarks.plist`.
+You can do it using Security-Scoped Bookmarks flow, more details in [apple documentation](https://developer.apple.com/library/archive/documentation/Security/Conceptual/AppSandboxDesignGuide/AppSandboxInDepth/AppSandboxInDepth.html#//apple_ref/doc/uid/TP40011183-CH3-SW16)
+Or for testing purposes you can add temporary-exception to your .entitlements file.
+
+```
+<key>com.apple.security.temporary-exception.files.home-relative-path.read-only</key>
+<array>
+	<string>Library/Safari/Bookmarks.plist</string>
+</array>
+```
+
+For more details please check [Full Disk Access](#full-disk-access) details.
+
+
 ## Installation
 
 ### CocoaPods

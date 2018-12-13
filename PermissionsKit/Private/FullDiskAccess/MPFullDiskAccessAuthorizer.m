@@ -7,12 +7,14 @@
 //
 
 #import "MPFullDiskAccessAuthorizer.h"
+#import <pwd.h>
 
 static NSString * const MPFullDiskAccessAuthorizerScriptName = @"preferences";
 
 @interface MPFullDiskAccessAuthorizer()
 
 @property (nonatomic, strong) NSFileManager *fileManager;
+@property (nonatomic, copy) NSString *userHomeFolderPath;
 
 @end
 
@@ -63,7 +65,7 @@ static NSString * const MPFullDiskAccessAuthorizerScriptName = @"preferences";
 
 - (MPAuthorizationStatus)_fullDiskAuthorizationStatus
 {
-    NSString *path = [NSHomeDirectory() stringByAppendingPathComponent:@"Library/Safari/Bookmarks.plist"];
+    NSString *path = [self.userHomeFolderPath stringByAppendingPathComponent:@"Library/Safari/Bookmarks.plist"];
     BOOL fileExists = [self.fileManager fileExistsAtPath:path];
     NSData *data = [NSData dataWithContentsOfFile:path];
     if (data == nil && fileExists)
@@ -78,6 +80,28 @@ static NSString * const MPFullDiskAccessAuthorizerScriptName = @"preferences";
     {
         return MPAuthorizationStatusNotDetermined;
     }
+}
+
+- (NSString *)userHomeFolderPath
+{
+    @synchronized (self)
+    {
+        if (!_userHomeFolderPath)
+        {
+            BOOL isSandboxed = (nil != NSProcessInfo.processInfo.environment[@"APP_SANDBOX_CONTAINER_ID"]);
+            if (isSandboxed)
+            {
+                struct passwd *pw = getpwuid(getuid());
+                assert(pw);
+                _userHomeFolderPath = [NSString stringWithUTF8String:pw->pw_dir];
+            }
+            else
+            {
+                _userHomeFolderPath = NSHomeDirectory();
+            }
+        }
+    }
+    return _userHomeFolderPath;
 }
 
 - (void)_openPreferences
