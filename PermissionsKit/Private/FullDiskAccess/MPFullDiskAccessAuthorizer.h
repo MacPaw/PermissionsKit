@@ -6,7 +6,7 @@
 //  Copyright © 2018 MacPaw. All rights reserved.
 //
 
-@import Foundation;
+@import AppKit;
 
 #import "MPAuthorizer.h"
 

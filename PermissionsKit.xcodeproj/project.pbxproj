@@ -27,7 +27,6 @@
 		A76D5918214941CB0091E347 /* MPCalendarAuthorizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D5916214941CB0091E347 /* MPCalendarAuthorizer.m */; };
 		A76D5921214948D40091E347 /* MPFullDiskAccessAuthorizer.h in Headers */ = {isa = PBXBuildFile; fileRef = A76D591F214948D40091E347 /* MPFullDiskAccessAuthorizer.h */; };
 		A76D5922214948D40091E347 /* MPFullDiskAccessAuthorizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D5920214948D40091E347 /* MPFullDiskAccessAuthorizer.m */; };
-		A76D5926214949A00091E347 /* preferences.osascript in Resources */ = {isa = PBXBuildFile; fileRef = A76D5925214949A00091E347 /* preferences.osascript */; };
 		A76D592A21494DCB0091E347 /* MPPhotosAuthorizer.h in Headers */ = {isa = PBXBuildFile; fileRef = A76D592821494DCB0091E347 /* MPPhotosAuthorizer.h */; };
 		A76D592B21494DCB0091E347 /* MPPhotosAuthorizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D592921494DCB0091E347 /* MPPhotosAuthorizer.m */; };
 		A76D592D21495A960091E347 /* PermissionsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A706EB5E214938530098836A /* PermissionsKit.framework */; };
@@ -102,7 +101,6 @@
 		A76D5916214941CB0091E347 /* MPCalendarAuthorizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPCalendarAuthorizer.m; sourceTree = "<group>"; };
 		A76D591F214948D40091E347 /* MPFullDiskAccessAuthorizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPFullDiskAccessAuthorizer.h; sourceTree = "<group>"; };
 		A76D5920214948D40091E347 /* MPFullDiskAccessAuthorizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPFullDiskAccessAuthorizer.m; sourceTree = "<group>"; };
-		A76D5925214949A00091E347 /* preferences.osascript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = preferences.osascript; sourceTree = "<group>"; };
 		A76D592821494DCB0091E347 /* MPPhotosAuthorizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPPhotosAuthorizer.h; sourceTree = "<group>"; };
 		A76D592921494DCB0091E347 /* MPPhotosAuthorizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPPhotosAuthorizer.m; sourceTree = "<group>"; };
 		A76D593521496DE40091E347 /* MPContactsAuthorization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPContactsAuthorization.h; sourceTree = "<group>"; };
@@ -167,7 +165,6 @@
 		A706EB60214938530098836A /* PermissionsKit */ = {
 			isa = PBXGroup;
 			children = (
-				A76D5923214949700091E347 /* Resources */,
 				A76D590421493C4C0091E347 /* Private */,
 				A76D590321493C440091E347 /* Public */,
 				A706EB61214938530098836A /* PermissionsKit.h */,
@@ -239,22 +236,6 @@
 				A76D5920214948D40091E347 /* MPFullDiskAccessAuthorizer.m */,
 			);
 			path = FullDiskAccess;
-			sourceTree = "<group>";
-		};
-		A76D5923214949700091E347 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				A76D5924214949870091E347 /* Scripts */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		A76D5924214949870091E347 /* Scripts */ = {
-			isa = PBXGroup;
-			children = (
-				A76D5925214949A00091E347 /* preferences.osascript */,
-			);
-			path = Scripts;
 			sourceTree = "<group>";
 		};
 		A76D592721494DC00091E347 /* Photos */ = {
@@ -410,7 +391,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A76D5926214949A00091E347 /* preferences.osascript in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
