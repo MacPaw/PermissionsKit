@@ -9,30 +9,30 @@
 #import "MPFullDiskAccessAuthorizer.h"
 #import <pwd.h>
 
-static NSString * const MPFullDiskAccessAuthorizerScriptName = @"preferences";
-
 @interface MPFullDiskAccessAuthorizer()
 
 @property (nonatomic, strong) NSFileManager *fileManager;
+@property (nonatomic, strong) NSWorkspace *workspace;
 @property (nonatomic, copy) NSString *userHomeFolderPath;
 
 @end
 
 @implementation MPFullDiskAccessAuthorizer
 
-- (instancetype)initWithFileManager:(NSFileManager *)fileManager
+- (instancetype)initWithFileManager:(NSFileManager *)fileManager workspace:(NSWorkspace *)workspace
 {
     self = [super init];
     if (self)
     {
         _fileManager = fileManager;
+        _workspace = workspace;
     }
     return self;
 }
 
 - (instancetype)init
 {
-    return [self initWithFileManager:[NSFileManager defaultManager]];
+    return [self initWithFileManager:[NSFileManager defaultManager] workspace:[NSWorkspace sharedWorkspace]];
 }
 
 #pragma mark - Public
@@ -106,24 +106,7 @@ static NSString * const MPFullDiskAccessAuthorizerScriptName = @"preferences";
 
 - (void)_openPreferences
 {
-    NSString *path = [[NSBundle bundleForClass:self.class] pathForResource:MPFullDiskAccessAuthorizerScriptName ofType:@"osascript"];
-    NSData *data = [NSData dataWithContentsOfFile:path];
-    NSString *script = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    [self _executeAppleScript:script];
-}
-
-- (void)_executeAppleScript:(NSString *)source
-{
-    @try {
-        NSTask *task = [[NSTask alloc] init];
-        [task setLaunchPath:@"/usr/bin/osascript"];
-        NSString *arguments = [NSString stringWithFormat:@"-e %@", source];
-        [task setArguments:[NSArray arrayWithObjects:arguments, nil]];
-        [task launch];
-        [task waitUntilExit];
-    } @catch (NSException *e) {
-        NSLog(@"Preferences could not be opened, reason: %@", [e reason]);
-    }
+    [self.workspace openURL:[NSURL URLWithString:@"x-apple.systempreferences:com.apple.preference.security?Privacy_AllFiles"]];
 }
 
 @end
