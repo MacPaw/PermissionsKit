@@ -65,7 +65,16 @@
 
 - (MPAuthorizationStatus)_fullDiskAuthorizationStatus
 {
-    NSString *path = [self.userHomeFolderPath stringByAppendingPathComponent:@"Library/Safari/Bookmarks.plist"];
+    NSString *path;
+    if (@available(macOS 10.15, *))
+    {
+         path = [self.userHomeFolderPath stringByAppendingPathComponent:@"Library/Safari/CloudTabs.db"];
+    }
+    else
+    {
+        path = [self.userHomeFolderPath stringByAppendingPathComponent:@"Library/Safari/Bookmarks.plist"];
+    }
+    
     BOOL fileExists = [self.fileManager fileExistsAtPath:path];
     NSData *data = [NSData dataWithContentsOfFile:path];
     if (data == nil && fileExists)
