@@ -17,7 +17,6 @@ The convenient wrapper on macOS permissions API. You can check and request user 
   s.osx.deployment_target = "10.13"
 
   s.source_files = 'PermissionsKit/Public/**/*', 'PermissionsKit/Private/**/*', 'PermissionsKit/PermissionsKit.h'
-  s.resources = 'PermissionsKit/Resources/scripts/*.osascript'
 
   s.public_header_files = 'PermissionsKit/Public/**/*.h', 'PermissionsKit/PermissionsKit.h'
   s.frameworks = 'Cocoa', 'Contacts', 'EventKit', 'Photos'
