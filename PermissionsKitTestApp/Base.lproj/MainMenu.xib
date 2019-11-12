@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15400" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14313.18"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15400"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -634,7 +634,7 @@
                             <menuItem title="Show Sidebar" keyEquivalent="s" id="kIP-vf-haE">
                                 <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
                                 <connections>
-                                    <action selector="toggleSourceList:" target="-1" id="iwa-gc-5KM"/>
+                                    <action selector="toggleSidebar:" target="-1" id="iwa-gc-5KM"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="Enter Full Screen" keyEquivalent="f" id="4J7-dP-txa">
@@ -692,11 +692,11 @@
             <rect key="contentRect" x="335" y="390" width="532" height="217"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="532" height="217"/>
+                <rect key="frame" x="0.0" y="0.0" width="532" height="212"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8e7-99-T2P">
-                        <rect key="frame" x="18" y="180" width="63" height="17"/>
+                        <rect key="frame" x="18" y="176" width="63" height="16"/>
                         <textFieldCell key="cell" lineBreakMode="clipping" title="Contacts:" id="gfw-7e-6Rd">
                             <font key="font" usesAppearanceFont="YES"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -704,7 +704,7 @@
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rt5-6n-I87">
-                        <rect key="frame" x="81" y="180" width="96" height="17"/>
+                        <rect key="frame" x="81" y="176" width="96" height="16"/>
                         <textFieldCell key="cell" lineBreakMode="clipping" title="Not Authorized" id="Snx-1M-lfT">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -712,7 +712,7 @@
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="Xhx-oa-Vpr">
-                        <rect key="frame" x="173" y="171" width="98" height="32"/>
+                        <rect key="frame" x="173" y="167" width="98" height="32"/>
                         <buttonCell key="cell" type="push" title="Authorize" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OVb-PW-pMH">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -722,7 +722,7 @@
                         </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1UC-Q0-Nib">
-                        <rect key="frame" x="18" y="139" width="63" height="17"/>
+                        <rect key="frame" x="18" y="136" width="63" height="16"/>
                         <textFieldCell key="cell" lineBreakMode="clipping" title="Calendar:" id="dqR-fp-vED">
                             <font key="font" usesAppearanceFont="YES"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -730,7 +730,7 @@
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QIM-R9-6mt">
-                        <rect key="frame" x="81" y="139" width="96" height="17"/>
+                        <rect key="frame" x="81" y="136" width="96" height="16"/>
                         <textFieldCell key="cell" lineBreakMode="clipping" title="Not Authorized" id="nfY-d3-5w1">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -738,7 +738,7 @@
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kcN-1M-aMg">
-                        <rect key="frame" x="173" y="130" width="98" height="32"/>
+                        <rect key="frame" x="173" y="127" width="98" height="32"/>
                         <buttonCell key="cell" type="push" title="Authorize" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ube-1g-HHu">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -748,7 +748,7 @@
                         </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="v8y-tB-mC7">
-                        <rect key="frame" x="18" y="98" width="72" height="17"/>
+                        <rect key="frame" x="18" y="96" width="72" height="16"/>
                         <textFieldCell key="cell" lineBreakMode="clipping" title="Reminders:" id="h6p-aK-pMv">
                             <font key="font" usesAppearanceFont="YES"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -756,7 +756,7 @@
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tQz-3b-gEU">
-                        <rect key="frame" x="90" y="98" width="96" height="17"/>
+                        <rect key="frame" x="90" y="96" width="96" height="16"/>
                         <textFieldCell key="cell" lineBreakMode="clipping" title="Not Authorized" id="zrt-mw-Kzj">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -764,7 +764,7 @@
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="67M-YN-9V1">
-                        <rect key="frame" x="182" y="89" width="98" height="32"/>
+                        <rect key="frame" x="182" y="87" width="98" height="32"/>
                         <buttonCell key="cell" type="push" title="Authorize" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bjW-Jr-acp">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -774,7 +774,7 @@
                         </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MK3-aG-0jY">
-                        <rect key="frame" x="18" y="57" width="51" height="17"/>
+                        <rect key="frame" x="18" y="56" width="51" height="16"/>
                         <textFieldCell key="cell" lineBreakMode="clipping" title="Photos:" id="odc-UQ-Lxj">
                             <font key="font" usesAppearanceFont="YES"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -782,7 +782,7 @@
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Fit-jC-Mnu">
-                        <rect key="frame" x="69" y="57" width="96" height="17"/>
+                        <rect key="frame" x="69" y="56" width="96" height="16"/>
                         <textFieldCell key="cell" lineBreakMode="clipping" title="Not Authorized" id="pIw-P9-5Vo">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -790,7 +790,7 @@
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="jiM-4w-LlI">
-                        <rect key="frame" x="161" y="48" width="98" height="32"/>
+                        <rect key="frame" x="161" y="47" width="98" height="32"/>
                         <buttonCell key="cell" type="push" title="Authorize" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="60C-qw-VrK">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -800,15 +800,15 @@
                         </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1Jy-E6-nDV">
-                        <rect key="frame" x="18" y="16" width="102" height="17"/>
-                        <textFieldCell key="cell" lineBreakMode="clipping" title="Fill Disk Access:" id="YPz-Jy-N7T">
+                        <rect key="frame" x="18" y="16" width="106" height="16"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="Full Disk Access:" id="YPz-Jy-N7T">
                             <font key="font" usesAppearanceFont="YES"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZA0-IW-zKy">
-                        <rect key="frame" x="120" y="16" width="96" height="17"/>
+                        <rect key="frame" x="124" y="16" width="96" height="16"/>
                         <textFieldCell key="cell" lineBreakMode="clipping" title="Not Authorized" id="aJd-aO-6X5">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -816,7 +816,7 @@
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="kc6-9t-soC">
-                        <rect key="frame" x="212" y="7" width="98" height="32"/>
+                        <rect key="frame" x="216" y="7" width="98" height="32"/>
                         <buttonCell key="cell" type="push" title="Authorize" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3Tg-ZZ-A6j">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -827,8 +827,10 @@
                     </button>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kc6-9t-soC" secondAttribute="trailing" constant="20" id="14m-b0-tj6"/>
                     <constraint firstItem="Fit-jC-Mnu" firstAttribute="centerY" secondItem="MK3-aG-0jY" secondAttribute="centerY" id="596-r6-885"/>
                     <constraint firstItem="rt5-6n-I87" firstAttribute="leading" secondItem="8e7-99-T2P" secondAttribute="trailing" constant="4" id="6yi-aU-taR"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jiM-4w-LlI" secondAttribute="trailing" constant="20" id="8Uc-ow-kUy"/>
                     <constraint firstItem="Xhx-oa-Vpr" firstAttribute="centerY" secondItem="rt5-6n-I87" secondAttribute="centerY" id="9eV-LQ-7jA"/>
                     <constraint firstItem="tQz-3b-gEU" firstAttribute="leading" secondItem="v8y-tB-mC7" secondAttribute="trailing" constant="4" id="C8Z-9B-Z0u"/>
                     <constraint firstItem="ZA0-IW-zKy" firstAttribute="centerY" secondItem="1Jy-E6-nDV" secondAttribute="centerY" id="Ch0-Rx-2nd"/>
@@ -836,14 +838,17 @@
                     <constraint firstItem="QIM-R9-6mt" firstAttribute="leading" secondItem="1UC-Q0-Nib" secondAttribute="trailing" constant="4" id="Hv7-8C-YDV"/>
                     <constraint firstItem="8e7-99-T2P" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" id="JR5-EE-4oI"/>
                     <constraint firstItem="kc6-9t-soC" firstAttribute="leading" secondItem="ZA0-IW-zKy" secondAttribute="trailing" constant="4" id="KPN-PS-UUz"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kcN-1M-aMg" secondAttribute="trailing" constant="20" id="Lkl-l3-jZ4"/>
                     <constraint firstItem="tQz-3b-gEU" firstAttribute="centerY" secondItem="v8y-tB-mC7" secondAttribute="centerY" id="Mac-2p-N3h"/>
                     <constraint firstItem="jiM-4w-LlI" firstAttribute="leading" secondItem="Fit-jC-Mnu" secondAttribute="trailing" constant="4" id="PU5-X7-xpW"/>
                     <constraint firstItem="rt5-6n-I87" firstAttribute="centerY" secondItem="8e7-99-T2P" secondAttribute="centerY" id="T68-Zh-u1t"/>
                     <constraint firstItem="jiM-4w-LlI" firstAttribute="centerY" secondItem="Fit-jC-Mnu" secondAttribute="centerY" id="TCI-na-J2g"/>
                     <constraint firstItem="MK3-aG-0jY" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="W69-oS-2Wd"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="67M-YN-9V1" secondAttribute="trailing" constant="20" id="ZEV-cS-wT0"/>
                     <constraint firstItem="QIM-R9-6mt" firstAttribute="centerY" secondItem="1UC-Q0-Nib" secondAttribute="centerY" id="bW2-oL-FlD"/>
                     <constraint firstItem="kcN-1M-aMg" firstAttribute="leading" secondItem="QIM-R9-6mt" secondAttribute="trailing" constant="4" id="bbv-zd-BAr"/>
                     <constraint firstItem="kc6-9t-soC" firstAttribute="centerY" secondItem="ZA0-IW-zKy" secondAttribute="centerY" id="cbD-yt-eBv"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Xhx-oa-Vpr" secondAttribute="trailing" constant="20" id="cyq-6J-pNO"/>
                     <constraint firstItem="MK3-aG-0jY" firstAttribute="top" secondItem="v8y-tB-mC7" secondAttribute="bottom" constant="24" id="gtp-4U-sER"/>
                     <constraint firstItem="1UC-Q0-Nib" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="hJ3-CM-DFW"/>
                     <constraint firstItem="67M-YN-9V1" firstAttribute="centerY" secondItem="tQz-3b-gEU" secondAttribute="centerY" id="hPP-p6-eJi"/>
