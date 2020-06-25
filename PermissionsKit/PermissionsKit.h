@@ -11,6 +11,6 @@
 FOUNDATION_EXPORT double PermissionsKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char PermissionsKitVersionString[];
 
-#import "MPAuthorizationStatus.h"
-#import "MPPermissionType.h"
-#import "MPPermissionsKit.h"
+#import <PermissionsKit/MPAuthorizationStatus.h>
+#import <PermissionsKit/MPPermissionType.h>
+#import <PermissionsKit/MPPermissionsKit.h>
