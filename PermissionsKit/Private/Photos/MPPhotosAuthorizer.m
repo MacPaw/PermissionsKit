@@ -52,6 +52,7 @@
         case PHAuthorizationStatusNotDetermined:
             return MPAuthorizationStatusNotDetermined;
     }
+    return MPAuthorizationStatusDenied;
 }
 
 @end
