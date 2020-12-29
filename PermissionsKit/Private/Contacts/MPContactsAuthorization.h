@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MPContactsAuthorization : NSObject
 
-+ (CNAuthorizationStatus)authorizationStatusForEntityType:(CNEntityType)entityType;
++ (CNAuthorizationStatus)authorizationStatusForEntityType:(CNEntityType)entityType API_AVAILABLE(macos(10.11));
 
 @end
 

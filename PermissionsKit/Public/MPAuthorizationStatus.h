@@ -9,5 +9,6 @@
 typedef NS_ENUM(NSUInteger, MPAuthorizationStatus) {
     MPAuthorizationStatusNotDetermined,
     MPAuthorizationStatusDenied,
-    MPAuthorizationStatusAuthorized
+    MPAuthorizationStatusAuthorized,
+	MPAuthorizationStatusLimited API_AVAILABLE(macos(10.11))
 } NS_SWIFT_NAME(AuthorizationStatus);
