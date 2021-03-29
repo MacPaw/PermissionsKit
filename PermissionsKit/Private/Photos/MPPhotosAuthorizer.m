@@ -42,7 +42,7 @@
 #pragma mark - Private
 
 - (MPAuthorizationStatus)_authorizationStatusFromPhotosAuthorizationStatus:(PHAuthorizationStatus)status
-{
+API_AVAILABLE(macos(10.13)){
     switch (status) {
         case PHAuthorizationStatusDenied:
         case PHAuthorizationStatusRestricted:
@@ -51,7 +51,9 @@
             return MPAuthorizationStatusAuthorized;
         case PHAuthorizationStatusNotDetermined:
             return MPAuthorizationStatusNotDetermined;
-    }
+		case PHAuthorizationStatusLimited:
+			return MPAuthorizationStatusLimited;
+	}
     return MPAuthorizationStatusDenied;
 }
 

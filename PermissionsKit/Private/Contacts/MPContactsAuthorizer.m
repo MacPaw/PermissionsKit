@@ -45,7 +45,7 @@
 #pragma mark - Private
 
 - (MPAuthorizationStatus)_authorizationStatusFromContactsAuthorizationStatus:(CNAuthorizationStatus)status
-{
+API_AVAILABLE(macos(10.11)){
     switch (status) {
         case CNAuthorizationStatusDenied:
         case CNAuthorizationStatusRestricted:
