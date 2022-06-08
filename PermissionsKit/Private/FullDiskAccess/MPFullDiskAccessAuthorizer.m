@@ -63,32 +63,54 @@
 
 #pragma mark - Private
 
-- (MPAuthorizationStatus)_fullDiskAuthorizationStatus
+
+- (MPAuthorizationStatus)_checkFDAUsingFile:(NSString *)path
 {
-    NSString *path;
-    if (@available(macOS 10.15, *))
+    int fd = open([path cStringUsingEncoding:kCFStringEncodingUTF8], O_RDONLY);
+    if (fd != -1)
     {
-         path = [self.userHomeFolderPath stringByAppendingPathComponent:@"Library/Safari/CloudTabs.db"];
-    }
-    else
-    {
-        path = [self.userHomeFolderPath stringByAppendingPathComponent:@"Library/Safari/Bookmarks.plist"];
+        close(fd);
+        return MPAuthorizationStatusAuthorized;
     }
     
-    BOOL fileExists = [self.fileManager fileExistsAtPath:path];
-    NSData *data = [NSData dataWithContentsOfFile:path];
-    if (data == nil && fileExists)
+    if (errno == EPERM || errno == EACCES)
     {
         return MPAuthorizationStatusDenied;
     }
-    else if (fileExists)
+    
+    return MPAuthorizationStatusNotDetermined;
+}
+
+- (MPAuthorizationStatus)_fullDiskAuthorizationStatus
+{
+    // We can't use just a single file to test FDA because:
+    // a) the file might not exist
+    // b) user might not have access to file even thought FDA is enabled
+    // Therefore, if any of these files is readable - we have FDA,
+    // otherwise if any exists, but can't be read, - we don't
+    NSArray<NSString *> *testFiles = @[
+        [self.userHomeFolderPath stringByAppendingPathComponent:@"Library/Safari/CloudTabs.db"],
+        [self.userHomeFolderPath stringByAppendingPathComponent:@"Library/Safari/Bookmarks.plist"],
+        @"/Library/Application Support/com.apple.TCC/TCC.db",
+        @"/Library/Preferences/com.apple.TimeMachine.plist",
+    ];
+    
+    MPAuthorizationStatus resultStatus = MPAuthorizationStatusNotDetermined;
+    for (NSString *file in testFiles)
     {
-        return MPAuthorizationStatusAuthorized;
+        MPAuthorizationStatus status = [self _checkFDAUsingFile: file];
+        if (status == MPAuthorizationStatusAuthorized)
+        {
+            resultStatus = MPAuthorizationStatusAuthorized;
+            break;
+        }
+        if (status == MPAuthorizationStatusDenied)
+        {
+            resultStatus = MPAuthorizationStatusDenied;
+        }
     }
-    else
-    {
-        return MPAuthorizationStatusNotDetermined;
-    }
+    
+    return resultStatus;
 }
 
 - (NSString *)userHomeFolderPath

@@ -59,6 +59,7 @@
         case MPAuthorizationStatusDenied: return @"Denied";
         case MPAuthorizationStatusAuthorized: return @"Authorized";
         case MPAuthorizationStatusNotDetermined: return @"Not determined";
+        case MPAuthorizationStatusLimited: return @"Limited";
     }
 }
 

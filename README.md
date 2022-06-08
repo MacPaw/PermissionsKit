@@ -99,9 +99,14 @@ Calling for permissions opens Preferences->Privacy with selected "Full Disk Acce
 
 ## Application Sandbox:
 
-PermissionsKit can be used in sandboxed applications. But this application should have access to the file
-`Library/Safari/Bookmarks.plist`on macOS 10.14 and `Library/Safari/CloudTabs.db` on macOS 10.15.
-You can do it using Security-Scoped Bookmarks flow, more details in [apple documentation](https://developer.apple.com/library/archive/documentation/Security/Conceptual/AppSandboxDesignGuide/AppSandboxInDepth/AppSandboxInDepth.html#//apple_ref/doc/uid/TP40011183-CH3-SW16)
+PermissionsKit can be used in sandboxed applications. It uses multiple files to check for FDA status in case some of the 
+tested files are unaccessible due to reasons unrelated to FDA (not present on older systems, UNIX permissions, etc.)
+The files are:
+* `~/Library/Safari/Bookmarks.plist`
+* `~/Library/Safari/CloudTabs.db`
+* `/Library/Application Support/com.apple.TCC/TCC.db`
+* `/Library/Preferences/com.apple.TimeMachine.plist`
+Your app needs to be able to access those files under sandbox. You can do it using Security-Scoped Bookmarks flow(e.g. having a bookmark for root folder), more details in [apple documentation](https://developer.apple.com/library/archive/documentation/Security/Conceptual/AppSandboxDesignGuide/AppSandboxInDepth/AppSandboxInDepth.html#//apple_ref/doc/uid/TP40011183-CH3-SW16)
 Or for testing purposes you can add temporary-exception to your .entitlements file.
 
 ```
@@ -109,6 +114,11 @@ Or for testing purposes you can add temporary-exception to your .entitlements fi
 <array>
 	<string>Library/Safari/Bookmarks.plist</string>
 	<string>Library/Safari/CloudTabs.db</string>
+</array>
+<key>com.apple.security.temporary-exception.files.absolute-path.read-only</key>
+<array>
+    <string>/Library/Application Support/com.apple.TCC/TCC.db</string>
+    <string>/Library/Preferences/com.apple.TimeMachine.plist</string>
 </array>
 ```
 
