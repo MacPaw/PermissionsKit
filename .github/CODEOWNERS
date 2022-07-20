@@ -1,0 +1,2 @@
+# Security checks owner is Security team
+.infrastructure/azp/security-pipeline.yml @MacPaw/security

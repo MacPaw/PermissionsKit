@@ -1,0 +1,24 @@
+name: security-scan
+trigger: none
+pr:
+  - master
+
+variables:
+  - group: vault
+  - group: github
+
+resources:
+  repositories:
+    - repository: sec-azp-pipelines
+      type: github
+      name: MacPaw/sec-azp-pipelines
+      ref: refs/heads/main
+      endpoint: MacPaw
+
+stages:
+  - stage: main
+    pool:
+      name: default-sre
+    displayName: scan
+    jobs:
+      - template: azp/templates/base-security-checks.yaml@sec-azp-pipelines
