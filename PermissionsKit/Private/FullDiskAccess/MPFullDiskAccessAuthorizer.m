@@ -66,7 +66,7 @@
 
 - (MPAuthorizationStatus)_checkFDAUsingFile:(NSString *)path
 {
-    int fd = open([path cStringUsingEncoding:kCFStringEncodingUTF8], O_RDONLY);
+    int fd = open([path cStringUsingEncoding:NSUTF8StringEncoding], O_RDONLY);
     if (fd != -1)
     {
         close(fd);
