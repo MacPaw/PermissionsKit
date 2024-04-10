@@ -91,7 +91,7 @@
     NSArray<NSString *> *testFiles = @[
         [self.userHomeFolderPath stringByAppendingPathComponent:@"Library/Safari/CloudTabs.db"],
         [self.userHomeFolderPath stringByAppendingPathComponent:@"Library/Safari/Bookmarks.plist"],
-        @"/Library/Application Support/com.apple.TCC/TCC.db",
+        [self.userHomeFolderPath stringByAppendingPathComponent: @"Library/Application Support/com.apple.TCC/TCC.db"],
         @"/Library/Preferences/com.apple.TimeMachine.plist",
     ];
     
