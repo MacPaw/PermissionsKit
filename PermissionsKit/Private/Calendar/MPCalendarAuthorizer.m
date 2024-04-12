@@ -66,6 +66,8 @@
             return MPAuthorizationStatusAuthorized;
         case EKAuthorizationStatusNotDetermined:
             return MPAuthorizationStatusNotDetermined;
+        case EKAuthorizationStatusWriteOnly:
+            return MPAuthorizationStatusDenied;
     }
 }
 
