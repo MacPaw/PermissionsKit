@@ -1,0 +1,1 @@
+../Private/Photos/MPPhotosAuthorizer.h
