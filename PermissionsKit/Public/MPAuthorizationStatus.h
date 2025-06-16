@@ -6,6 +6,8 @@
 //  Copyright © 2018 MacPaw. All rights reserved.
 //
 
+@import Foundation;
+
 typedef NS_ENUM(NSUInteger, MPAuthorizationStatus) {
     MPAuthorizationStatusNotDetermined,
     MPAuthorizationStatusDenied,
