@@ -8,8 +8,8 @@
 
 @import Foundation;
 
-#import <PermissionsKit/MPPermissionType.h>
-#import <PermissionsKit/MPAuthorizationStatus.h>
+#import "MPPermissionType.h"
+#import "MPAuthorizationStatus.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

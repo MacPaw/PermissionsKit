@@ -3,6 +3,7 @@
 
 [![CI Status](https://img.shields.io/travis/MacPaw/PermissionsKit.svg?style=flat)](https://travis-ci.org/MacPaw/PermissionsKit)
 [![Version](https://img.shields.io/cocoapods/v/PermissionsKit-macOS.svg?style=flat)](https://cocoapods.org/pods/PermissionsKit-macOS)
+[![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-FC6956.svg?style=flat)](https://github.com/MacPaw/PermissionsKit)
 [![Platform](https://img.shields.io/cocoapods/p/PermissionsKit-macOS.svg?style=flat)](https://cocoapods.org/pods/PermissionsKit-macOS)
 [![License](https://img.shields.io/cocoapods/l/PermissionsKit-macOS.svg?style=flat)](https://cocoapods.org/pods/PermissionsKit-macOS)
@@ -126,6 +127,19 @@ For more details please check [Full Disk Access](#full-disk-access) details.
 
 
 ## Installation
+
+### Swift Package Manager
+PermissionsKit supports SPM from Xcode 11.0+. To install it, simply add the package to your project using the following repository URL:
+```
+https://github.com/MacPaw/PermissionsKit.git
+```
+
+Or add it to your `Package.swift` file:
+```swift
+dependencies: [
+    .package(url: "https://github.com/MacPaw/PermissionsKit.git", from: "1.0.7")
+]
+```
 
 ### CocoaPods
 PermissionsKit is available through [CocoaPods](https://cocoapods.org). To install it, simply add the following line to your Podfile:
