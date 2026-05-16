@@ -8,7 +8,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/PermissionsKit-macOS.svg?style=flat)](https://cocoapods.org/pods/PermissionsKit-macOS)
 [![License](https://img.shields.io/cocoapods/l/PermissionsKit-macOS.svg?style=flat)](https://cocoapods.org/pods/PermissionsKit-macOS)
 
-![Calendar](https://github.com/MacPaw/PermissionsKit/raw/master/Screenshots/logo.png)
+![PermissionsKit](.github/header.png)
 
 The convenient wrapper on macOS permissions API. 
 
